@@ -1,195 +1,198 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'Libre Baskerville', serif;
-    scroll-behavior: smooth;
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Libre Baskerville", serif;
+  scroll-behavior: smooth;
 }
-header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/bg-image.jpg");
-height: 90vh;
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/bg-image.jpg");
+  height: 90vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: #f2f2f2;
 }
 /* THE NAVIGATION BAR  */
-#nav-bar{
-    display: flex;
-    justify-content: space-between;
-    padding: 2em 3em;
-    align-items: center;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            min-height: 75px;
-            align-items: center;
-            background-image: url("./images/bg-image.jpg");
+#nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 3em;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 75px;
+  align-items: center;
+  background-image: url("./images/bg-image.jpg");
   opacity: 12em;
-
-      
 }
 /* The navigation elements  */
-#header-img{
-    width:10em;
+#header-img {
+  width: 10em;
 }
-ul{
-    display:flex;
+ul {
+  display: flex;
 }
-li{
-    list-style: none;
-
+li {
+  list-style: none;
 }
-.nav-link{
-    margin: 2em;
-    cursor: pointer;
-    font-weight: 700;
-    color: #fff;
-    text-decoration: none;
-
+.nav-link {
+  margin: 2em;
+  cursor: pointer;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
 }
-.nav-link:hover{
-    text-decoration: underline;
+.nav-link:hover {
+  text-decoration: underline;
 }
 /* The heading  */
-#intro{
-    text-align: center;
-    font-weight: 700;
-    font-size: 4em;
-    line-height: 1.5em;
-    padding:3em 0;
+#intro {
+  text-align: center;
+  font-weight: 700;
+  font-size: 4em;
+  line-height: 1.5em;
+  padding: 3em 0;
 }
 /* FLAVORS  */
 /* The heading  */
-#flavor{
-    text-align: center;
-    margin: 2em;
+#flavor {
+  text-align: center;
+  margin: 2em;
 }
-#flavors{
-    margin-bottom: 4em;
+#flavors {
+  margin-bottom: 4em;
 }
-.flavor img{
-    width: 14em;
-    border-radius: 10px;
+.flavor img {
+  width: 14em;
+  border-radius: 10px;
 }
-.flavor, .flavor-cards, #pricing{
-    display: flex;
+.flavor,
+.flavor-cards,
+#pricing {
+  display: flex;
 }
-@media screen and (max-width: 375px) {
-    .flavor, .flavor-cards, #pricing{
-        display: grid;
-    }
-    
-    
+@media screen and (max-width: 480px) {
+  .flavor,
+  .flavor-cards,
+  #pricing {
+    display: grid;
+  }
 }
-.description{
-    text-align: center;
-    padding: 1.5em;
+.description {
+  text-align: center;
+  padding: 1.5em;
 }
-.description h2{
-    margin: 1em;
+.description h2 {
+  margin: 1em;
 }
 /* THE EMBEDDED VIDIEO SECTION  */
 
-.video{
-    margin:3em 0;
-    display: flex;
-    justify-content: center;
-  }
-  #recipe h2, #contact h2{
-      text-align: center;
-  }
-  /* THE PRICING SECTION  */
-#pricing{
-    margin: 2em 0;
+.video {
+  margin: 3em 0;
+  display: flex;
+  justify-content: center;
 }
-.price-card{
-    text-align: center; 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 25em;
-    height: 22em;
-    margin: auto;
-    border-radius: 2em;
-    padding: 2em;
-    line-height: 2em;
+#recipe h2,
+#contact h2 {
+  text-align: center;
+}
+/* THE PRICING SECTION  */
+#pricing {
+  margin: 2em 0;
+}
+.price-card {
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 25em;
+  height: 22em;
+  margin: auto;
+  border-radius: 2em;
+  padding: 2em;
+  line-height: 2em;
 }
 
 /* The pricing card button  */
-.card-btn{
-    border: none;
-    color: #fff;
-    background-color: #000;
-    cursor: pointer;
-    padding: 0.5em 1em;
-    border-radius: 5px;
+.card-btn {
+  border: none;
+  color: #fff;
+  background-color: #000;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  border-radius: 5px;
 }
 .card-btn:hover {
-    background-color: #3c3d3c;
-  }
+  background-color: #3c3d3c;
+}
 /* THE CONTACT SECTION  */
-#contact{
-    margin: 4em 2em;
+#contact {
+  margin: 4em 2em;
 }
 /* THE CONTACT FORM  */
 /* Style inputs with type="text", select elements and textareas */
-input[type=text],input[type=email] , select, textarea {
-    width: 100%; 
-    padding: 12px;  
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    margin-top: 6px; 
-    margin-bottom: 16px; 
-    resize: vertical;
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  #contact h2{
-      margin-bottom: 2em;
-  }
-  form button{
-    background-color: #000;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    width: 100%;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
- form button:hover {
-    background-color: #3c3d3c;
-  }
-  
-  /* Add a background color and some padding around the form */
-  .form-container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-  /* The footer  */
-  footer {
-    /* margin-top: 30px; */
-    background-color: #ddd;
-    padding: 20px;
-  }
-  
-  footer > ul {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  
-  footer > ul > li {
-    padding: 0 10px;
-    margin: 2em;
-  }
-  
-  footer > span {
-    margin-top: 5px;
-    display: flex;
-    justify-content: flex-end;
-    font-size: 0.9em;
-    color: #444;
-  }
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* Style the submit button with a specific background color etc */
+#contact h2 {
+  margin-bottom: 2em;
+}
+form button {
+  background-color: #000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+form button:hover {
+  background-color: #3c3d3c;
+}
+
+/* Add a background color and some padding around the form */
+.form-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+/* The footer  */
+footer {
+  /* margin-top: 30px; */
+  background-color: #ddd;
+  padding: 20px;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+  margin: 2em;
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #444;
+}
